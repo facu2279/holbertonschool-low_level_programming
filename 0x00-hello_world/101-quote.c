@@ -4,11 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-#include <iostream>
-#include <cstdlib> // to use rand()
-using std::cout;
-
 int main() {
-  cout << "Hey, we got ";
+write("hola");
   return 1;
 }
