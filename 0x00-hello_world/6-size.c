@@ -13,7 +13,3 @@ int main(void)
 	printf("Size of float: %i byte(s)\n", sizeof(float));
 	return (0);
 }
-
-
-
-
