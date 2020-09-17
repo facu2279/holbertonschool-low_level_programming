@@ -23,7 +23,7 @@ printf("Last digit of %i is %i and is less than 6 and not 0\n", n, b);
 }
 else
 {
-printf("Last digit of %i is %i\n", n, 0);
+printf("Last digit of %i is 0 and is 0\n", n);
 }
 return (0);
 }
