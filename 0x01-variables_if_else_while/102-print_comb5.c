@@ -1,46 +1,37 @@
-B#include <stdio.h>
+#include <stdio.h>
+
 /**
- * main - Entry point
+ * main - loop through variables a,b,c printing digits
  *
- * Return: Always 0 (Success)
+ * Return: print to stdout all possible different combinations of three digits
  */
 int main(void)
 {
-int a, b, c, d, si;
-si = '0';
-for (a = '0'; a <= '9'; a++)
-{
-for (b = '0'; b <= '9'; b++)
-{
-for (c = '0'; c <= '9'; c++)
-{
-for (d = '0'; d <= '9'; d++)
-{
-if (a + b != c + d)
-{
-si = '1';
-}
-else if (a == '0' || b == '0')
-{
-if (c == '0' || d == '0')
-{
-si = '1';
-}
-}
-if (si == '1')
-{
-putchar(a);
-putchar(b);
-putchar(44);
-putchar(c);
-putchar(d);
-putchar(32);
-si = '0';
-}
-}
-}
-}
-}
-putchar('\n');
-return (0);
+  int a = 0;
+  int b;
+
+  while (a <= 98) /*run following while a less than or equal to 98*/
+    {
+      b = a + 1; /*b is always one more than a*/
+      while (b <= 99) /*run following until b equal to 99*/
+	{
+	  putchar(a / 10 % 10 + '0');
+	  putchar(a % 10 + '0');
+	  putchar(' ');
+	  putchar(b / 10 % 10 + '0');
+	  putchar(b % 10 + '0');
+	  if (a == 98 && b == 99)
+	    {
+	      putchar('\n');
+	    }
+	  else
+	    {
+	      putchar(',');
+	      putchar(' ');
+	    }
+	  b++;
+	}
+      a++; /*increment this loop by 1*/
+    }
+  return (0);
 }
