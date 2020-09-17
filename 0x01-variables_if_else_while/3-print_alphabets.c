@@ -11,9 +11,9 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar(ch);
 }
-for (ch = 'A' ; ch <= 'Z' ; ch++)
+for (ch2 = 'A' ; ch2 <= 'Z' ; ch++)
 {
-putchar(ch);
+putchar(ch2);
 }
 putchar('\n');
 return (0);
