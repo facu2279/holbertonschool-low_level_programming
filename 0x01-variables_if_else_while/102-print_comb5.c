@@ -1,37 +1,37 @@
 #include <stdio.h>
-
 /**
- * main - loop through variables a,b,c printing digits
+ * main - Entry point
  *
- * Return: print to stdout all possible different combinations of three digits
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  int a = 0;
-  int b;
-
-  while (a <= 98) /*run following while a less than or equal to 98*/
+  int a, b, c, d;
+  for (a = '0'; a <= '9'; a++)
     {
-      b = a + 1; /*b is always one more than a*/
-      while (b <= 99) /*run following until b equal to 99*/
+      for (b = '0'; b <= '9'; b++)
 	{
-	  putchar(a / 10 % 10 + '0');
-	  putchar(a % 10 + '0');
-	  putchar(' ');
-	  putchar(b / 10 % 10 + '0');
-	  putchar(b % 10 + '0');
-	  if (a == 98 && b == 99)
+	  for (c = '0'; c <= '9'; c++)
 	    {
-	      putchar('\n');
+	      for (d = '0'; d <= '9'; d++)
+		{
+		  if ( a < c || (a == c && b < d))
+		    {
+		      putchar(a);
+		      putchar(b);
+		      putchar(' ');
+		      putchar(c);
+		      putchar(d);
+		      if (a != '9' || b != '8' || c != '9' || d != '9')
+			{
+		      putchar(',');
+		      putchar(' ');
+			}
+		    }
+		}
 	    }
-	  else
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
-	  b++;
 	}
-      a++; /*increment this loop by 1*/
     }
+  putchar('\n');
   return (0);
 }
