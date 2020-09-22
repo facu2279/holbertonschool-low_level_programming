@@ -9,17 +9,18 @@ int main(void)
 unsigned long a, b, c, i;
 a = 0;
 b = 1;
-for (i = 0; i <= 4000000; i++)
+c = 0;
+while (c <= 4000000)
 {
 c = a + b;
 if (c % 2 == 0)
 {
 printf("%lu", c);
-if (i != 4000000)
-{
+ if (c != 3524578)
+   {
 printf(", ");
 }
-}
+ }
 a = b;
 b = c;
 }
