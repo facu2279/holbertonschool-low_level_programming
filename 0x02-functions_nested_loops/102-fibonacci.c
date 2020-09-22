@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 
-void main(void)
+int main(void)
 {
   long int a, b, c, i;
   a = 0;
@@ -18,5 +18,6 @@ void main(void)
       b = c;
     }
  putchar('\n');
+ return(0);
 }
 
