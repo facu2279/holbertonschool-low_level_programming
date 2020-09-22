@@ -1,32 +1,14 @@
 #include "holberton.h"
-void spacecom(void);
-void enter(void);
 void print(int);
 void times_table(void)
 {
-  print(0);
+  int i;
+  for(i = 0; i<= 9; i++)
+    {
+  print(i);
   _putchar('\n');
-  print(1);
-  _putchar('\n');
-  print(2);
-  _putchar('\n');
-  print(3);
-  _putchar('\n');
-  print(4);
-  _putchar('\n');
- print(5);
- _putchar('\n');
-  print(6);
-  _putchar('\n');
-  print(7);
-  _putchar('\n');
-  print(8);
-  _putchar('\n');
-  print(9);
-  _putchar('\n');
-
+    }
 }
-
 void print(int multi)
 {
   int i,res,a,b;
