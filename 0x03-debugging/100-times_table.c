@@ -1,18 +1,24 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * main - causes an infinite loop
+ * Return: 0
  */
+
 int main(void)
 {
-  print_times_table(3);
-  _putchar('\n');
-  print_times_table(5);
-  _putchar('\n');
-  print_times_table(98);
-  _putchar('\n');
-  print_times_table(12);  
+  int i;
+
+  printf("Infinite loop incoming :(\n");
+
+  i = 0;
+
+  while (i < 10)
+    {
+      putchar(i);
+    }
+
+  printf("Infinite loop avoided! \\o/\n");
+
   return (0);
 }
