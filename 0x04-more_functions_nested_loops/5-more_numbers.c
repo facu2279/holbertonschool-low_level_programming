@@ -5,9 +5,11 @@
  */
 void more_numbers(void)
 {
-  int i, a;
+  int i, i2, a;
 
-  for (i = 0; i < 15; i++)
+  for (i2 = 0; i2 <=10; i2++)
+    {
+ for (i = 0; i < 15; i++)
     {
       if (i < 10)
 	{
@@ -20,4 +22,5 @@ void more_numbers(void)
       _putchar(a + '0');
     }
   _putchar('\n');
+}
 }
