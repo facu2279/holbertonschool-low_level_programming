@@ -1,3 +1,11 @@
 #!/bin/bash
 var=$(ls *.c -t | head -n 1)
 betty $var
+if [ $? -eq 0 ];
+then
+git add .
+git commit -m "$var"
+git push
+else
+echo "arregla el betty capo"
+fi
