@@ -13,7 +13,7 @@ if(i % 2 != 0)
 {
 i = i - 1;
 }
-for (a = i / 2; a <= i; a++)
+for (a = i / 2; str[a] <= i; a++)
 {
 _putchar(str[a]);
 }
