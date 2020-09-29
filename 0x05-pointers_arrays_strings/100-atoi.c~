@@ -1,0 +1,9 @@
+#include <stdio.h>
+/**
+ * _atoi - sdfas
+ *@s:sdfasd
+ */
+int _atoi(char *s)
+{
+  return (s);
+}
