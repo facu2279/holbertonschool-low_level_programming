@@ -24,10 +24,15 @@ for (i = 0; i <= b; i++)
 res = res * 10 + s[i] - '0';
 }
  if (res > 0)
-   {
-     return (res);
-   }else{
-   return(res - 2 * res);
- }
+{
+return (res);
+}else if (res < 0)
+{
+return(res - 2 * res);
+}
+else
+{
+return (0):
+}
 }
 
