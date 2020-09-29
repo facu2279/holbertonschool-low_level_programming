@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * *_strcpy - sdgdfgs
+ *_strcpy - sdgdfgs
  * @dest: sfdgsdf
  * @src: gdsfgsd
  * Return: sdfgsdfg
