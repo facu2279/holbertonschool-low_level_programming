@@ -6,9 +6,23 @@
  */
 int _atoi(char *s)
 {
-int res = 0;
-for (int i = 0; s[i] != '\0'; i++)
-if(s[i] >= 'a' && s[i] <= 'Z')
+  int i, a, b = 0, res = 0;
+  for (a = 0; s[a] != '\0'; a++)
+    {
+      if (s[a] >= 0 && s[a] <= 9)
+	{
+	  while(s[a] >= 0 && s[a] <= 9)
+	    {
+	      s[b] = s[a];
+	      a++;
+	      b++;
+	    }
+	}
+
+
+    }
+
+for (i = 0; i <= b; i++)
 {
 res = res * 10 + s[i] - '0';
 }
