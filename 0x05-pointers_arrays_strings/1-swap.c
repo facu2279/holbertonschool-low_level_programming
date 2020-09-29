@@ -11,4 +11,5 @@ c = *a;
 d = *b;
 *a = d;
 *b = c;
+_putchar('\n');
 }
