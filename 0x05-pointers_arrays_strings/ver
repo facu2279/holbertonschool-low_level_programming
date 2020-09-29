@@ -1,0 +1,3 @@
+#!/bin/bash
+var=$(ls *.c -t | head -n 1)
+betty $var

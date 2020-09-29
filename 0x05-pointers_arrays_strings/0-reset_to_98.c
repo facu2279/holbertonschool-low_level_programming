@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * reset_to_98 - aaasafdas
- * @n: asdfsd
+ *reset_to_98 - awdadwa
+ *@n: adsajda
  */
 void reset_to_98(int *n)
 {

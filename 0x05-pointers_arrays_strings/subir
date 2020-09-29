@@ -1,6 +1,4 @@
 #!/bin/bash
-var=$(ls -t | head -n 1)
-git add $var
-git status
+git add .
 git commit -m "a"
 git push
