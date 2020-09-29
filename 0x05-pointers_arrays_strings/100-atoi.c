@@ -29,7 +29,7 @@ return (res);
 }
 else
 {
-return(res - 2 * res);
+return(res * (-1));
 }
 }
 
