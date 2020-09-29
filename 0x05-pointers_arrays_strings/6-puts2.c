@@ -10,5 +10,5 @@ for (i = 0; str[i] != '\0'; i = i + 2)
 {
 _putchar(str[i]);
 }
-putchar('\n');
+_putchar('\n');
 }
