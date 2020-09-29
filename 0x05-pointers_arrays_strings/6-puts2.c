@@ -5,8 +5,12 @@
  */
 void puts2(char *str)
 {
-int i;
-for (i = 0; str[i] != '\0'; i = i + 2)
+  int i, i2;
+  for (i2 = 0; str[i2] != '\0'; i2++)
+    {
+
+    }
+for (i = 0; i <= i2; i = i + 2)
 {
 _putchar(str[i]);
 }
