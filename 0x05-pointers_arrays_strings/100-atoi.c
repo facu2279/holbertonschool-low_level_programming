@@ -23,5 +23,11 @@ for (i = 0; i <= b; i++)
 {
 res = res * 10 + s[i] - '0';
 }
-return (res);
+ if (res > 0)
+   {
+     return (res);
+   }else{
+   return(res - 2 * res);
+ }
 }
+
