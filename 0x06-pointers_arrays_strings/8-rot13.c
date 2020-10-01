@@ -1,27 +1,26 @@
 #include "holberton.h"
 #include <stdio.h>
-
 /**
- * rot13 - check the code for Holberton School students.
- * @a: var
- * Return: Always 0.
+ * rot13 - qwqerwqerwqerwqer
+ * @s: werwqreqwerwqerw
+ * Return:sadfsadf
  */
-char *rot13(char *a)
+char *rot13(char *s)
 {
-  int i = 0, j = 0;
-  char letra1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  char letra2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-  while (*(a + i) != 0)
-    {
-      for (j = 0; j <= 52; j++)
-	{
-	  if (*(a + i) == letra1[j])
-	    {
-	      *(a + i) = letra2[j];
-	      break;
-	    }
-	}
-      i++;
-    }
-  return (a);
+int i = 0, i2 = 0;
+char my[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char my2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+while (*(s + i) != 0)
+{
+for (i2 = 0; i2 <= 52; i2++)
+{
+if (*(s + i) == my[i2])
+{
+*(s + i) = my2[i2];
+break;
+}
+}
+i++;
+}
+return (s);
 }
