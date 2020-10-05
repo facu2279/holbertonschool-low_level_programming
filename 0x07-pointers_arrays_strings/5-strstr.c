@@ -15,8 +15,7 @@ for (i2 = 0; needle[i2] != '\0'; i2++)
 {
 if (haystack[i] == needle[i2])
 {
-haystack = haystack + i + i2 + 2;
-return (haystack);
+return (haystack + i + i2 + 2);
 }
 }
 }
