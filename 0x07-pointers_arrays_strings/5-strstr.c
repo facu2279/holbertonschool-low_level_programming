@@ -1,29 +1,37 @@
 #include "holberton.h"
 /**
- * _strstr - dfgsd
- * @haystack: sdfa
- * @needle: afa
- * Return: sadf
+ * _strstr - check the code for Holberton School students.
+ * @haystack: int
+ * @needle: int
+ *
+ * Return: Always 0.
  */
 char *_strstr(char *haystack, char *needle)
 {
-int i, i2;
+  int i = 0, j = 0;
+  while (haystack[i] != '\0')
+    {
+      while (needle[j] != '\0' && (haystack[i] == needle[0]))
+	{
+	  if (haystack[i + j] == needle[j])
+	    {
+	      j++;
+	    }
+	  else
+	    {
+	      break;
+	    }
+	}
 
- for (i = 0; haystack[i] != '\0'; i++)
-   {
-     if (haystack[i] == needle[0])
-       {
-	 for (i2 = 0; needle[i2] != '\0'; i2++)
-	   {
-	     if (haystack[i + i2] != needle[i2] && needle[i2] != '\0')
-	       {
-		 return (haystack);
-	       }else{
-	       haystack = haystack + i;
-	     }
-	   }
-
-       }
-   }
-return ('\0');
+      if (needle[j] != '\0')
+	{
+	  j = 0;
+	  i++;
+	}
+      else
+	{
+	  return (haystack + i);
+	}
+    }
+  return (0);
 }
