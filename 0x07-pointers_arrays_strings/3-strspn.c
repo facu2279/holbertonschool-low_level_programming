@@ -1,26 +1,26 @@
 #include "holberton.h"
 /**
- * _strspn - gets length of prefix substring
- * @s: string
- * @accept: accept string
- * Return: count of accept
+ * _strspn - hfgh
+ * @s: sdafasd
+ * @accept: asadfsadf
+ * Return: asdfasdsfdf
  */
 unsigned int _strspn(char *s, char *accept)
 {
-  int i, j, k = 0;
+  int i, i2, cont = 0;
 
   for (i = 0; s[i] != '\0'; i++)
     {
-      for (j = 0; accept[j] != '\0'; j++)
+      for (i2 = 0; accept[i2] != '\0'; i2++)
 	{
-	  if (s[i] == accept[j])
+	  if (s[i] == accept[i2])
 	    {
-	      k++;
+	      cont++;
 	      break;
 	    }
 	}
-      if (s[i] != accept[j])
+      if (s[i] != accept[i2])
 	break;
     }
-  return (k);
+  return (cont);
 }
