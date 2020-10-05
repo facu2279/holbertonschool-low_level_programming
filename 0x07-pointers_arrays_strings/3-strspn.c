@@ -22,5 +22,5 @@ break;
 if (s[i] != accept[i2])
 break;
 }
-return (s + 1);
+return (i);
 }
