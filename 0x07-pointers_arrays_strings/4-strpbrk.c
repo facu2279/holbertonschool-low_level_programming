@@ -1,23 +1,24 @@
 #include "holberton.h"
 /**
- * _strpbrk - fdgsd
- * @s: safasd
- * @accept: sdfsa
- * Return: sfds
+ * _strpbrk - searches a string for any of a set of bytes
+ * @s: takes in a string
+ * @accept: takes in a string
+ * Return: s, the string
  */
 char *_strpbrk(char *s, char *accept)
 {
-int i, i2;
+  int i, j;
 
-for (i = 0; s[i] != '\0'; i++)
-{
-for (i2 = 0; accept[i2] != '\0'; i2++)
-{
-if (s[i] == accept[i2])
-{
-return (s + i);
-}
-}
-}
-return ('\0');
+  for (i = 0; s[i] != '\0'; i++)
+    {
+      for (j = 0; accept[j] != '\0'; j++)
+	{
+	  if (s[i] == accept[j])
+	    {
+	      return (s + i);
+	    }
+	}
+    }
+
+  return ('\0');
 }
