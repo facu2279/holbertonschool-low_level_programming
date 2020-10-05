@@ -14,7 +14,6 @@ for (i2 = 0; accept[i2] != '\0'; i2++)
 {
 if(s[i] == accept[i2])
 {
-s--;
 return (s);
 }
 s++;
