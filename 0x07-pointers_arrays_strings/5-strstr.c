@@ -11,13 +11,19 @@ int i, i2;
 
  for (i = 0; haystack[i] != '\0'; i++)
    {
-     for (i2 = 0; needle[i2] != '\0'; i2++)
+     if (haystack[i] == needle[0])
        {
-	 if (haystack[i] != needle[i2])
+	 for (i2 = 0; needle[i2] != '\0'; i2++)
 	   {
-	     return (needle + i);
+	     if (haystack[i + i2] != needle[i2] && needle[i2] != '\0')
+	       {
+		 return (haystack);
+	       }else{
+	       haystack = haystack + i;
+	     }
 	   }
+
        }
    }
- return ('\0');
+return ('\0');
 }
