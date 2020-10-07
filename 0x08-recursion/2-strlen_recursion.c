@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * strlen_recursion - fdgsd
+ * _strlen_recursion - fdgsd
  * @s: gfdgsd
  * Return: sadfa
  */
