@@ -1,24 +1,35 @@
 #include "holberton.h"
 /**
- * sqr - sfdgfd
+ * isp - sfdgfd
  * @a: sadfas
- * @v: asdfa
+ * @n: asdfa
  * Return: sadf
  */
-int sqr(int a, int v)
+int isp(int a, int n)
 {
-  if (v % a == 0 || a != 1)
-    {
-      return (0);
-    }else
-    return (sqr(a - 1, v));
+if (a < n)
+{
+if (n % a == 0)
+{
+return (0);
+}
+else
+{
+return (isp(a + 1, n));
+}
+}
+return (1);
 }
 /**
- *_sqrt_recursion - sadfas
+ *is_prime_number - sadfas
  *@n: asdfsa
  * Return: asdfas
  */
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
-  return (sqr(n - 1, n));
+if (n <= 0 || n == 1)
+{
+return (0);
+}
+return (isp(2, n));
 }
