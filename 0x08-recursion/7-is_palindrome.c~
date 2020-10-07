@@ -1,0 +1,35 @@
+#include "holberton.h"
+int ispali(int inicio, int fin, char *s);
+int _strlen_recursion(char *s);
+
+int is_palindrome(char *s)
+{
+  int fin, inicio;
+  fin = _strlen_recursion(s);
+  inicio = 0;
+  return (ispali(inicio, fin - 1, s));
+}
+int ispali(int inicio, int fin, char *s)
+{
+  if (s[inicio] != s[fin])
+      return (0);
+
+  if (inicio >= fin)
+    return(1);
+
+  return (ispali(inicio + 1, fin + 1, s));
+}
+int _strlen_recursion(char *s)
+{
+  int cont = 0;
+  if (*s != 0)
+    {
+      s++;
+      cont = cont + 1 + _strlen_recursion(s);
+    }
+  else
+    {
+      return (0);
+    }
+  return (cont);
+}
