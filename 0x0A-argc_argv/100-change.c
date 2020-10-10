@@ -8,7 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int cambio, counter = 0;
+	int cambio, monedas = 0;
 
 	if (argc != 2)
 	{
@@ -22,29 +22,29 @@ int main(int argc, char *argv[])
 		if (cambio >= 25)
 		{
 			cambio -= 25;
-			counter += 1;
+			monedas++;
 		}
 		else if (cambio >= 10)
 		{
 			cambio -= 10;
-			counter += 1;
+			monedas++;
 		}
 		else if (cambio >= 5)
 		{
 			cambio -= 5;
-			counter += 1;
+			monedas++;
 		}
 		else if (cambio >= 2)
 		{
 			cambio -= 2;
-			counter += 1;
+			monedas++;
 		}
 		else
 		{
 			cambio -= 1;
-			counter += 1;
+			monedas++;
 		}
 	}
-	printf("%d\n", counter);
+	printf("%d\n", monedas);
 	return (0);
 }
