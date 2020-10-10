@@ -8,7 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int cent, counter = 0;
+	int cambio, counter = 0;
 
 	if (argc != 2)
 	{
@@ -16,32 +16,32 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	cent = atoi(argv[1]);
+	cambio = atoi(argv[1]);
 	while (cent > 0)
 	{
-		if (cent >= 25)
+		if (cambio >= 25)
 		{
-			cent -= 25;
+			cambio -= 25;
 			counter += 1;
 		}
-		else if (cent >= 10)
+		else if (cambio >= 10)
 		{
-			cent -= 10;
+			cambio -= 10;
 			counter += 1;
 		}
-		else if (cent >= 5)
+		else if (cambio >= 5)
 		{
-			cent -= 5;
+			cambio -= 5;
 			counter += 1;
 		}
-		else if (cent >= 2)
+		else if (cambio >= 2)
 		{
-			cent -= 2;
+			cambio -= 2;
 			counter += 1;
 		}
 		else
 		{
-			cent -= 1;
+			cambio -= 1;
 			counter += 1;
 		}
 	}
