@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 
 	cambio = atoi(argv[1]);
-	while (cent > 0)
+	while (cambio > 0)
 	{
 		if (cambio >= 25)
 		{
