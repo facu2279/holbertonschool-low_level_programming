@@ -45,7 +45,6 @@ monedas++;
 printf("%d\n", monedas);
 return (0);
 }
-}
 printf("Error\n");
 return (1);
 }
