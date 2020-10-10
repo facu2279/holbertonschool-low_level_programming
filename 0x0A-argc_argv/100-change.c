@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - eassadf
-* @argc: asdfasdf
-* @argv: asdfasdfsa
-* Return: sadfasdf
+* main - asdfasdf
+* @argc: asdfsadfsdf
+* @argv: sadfasdfsadf
+* Return: sadfsadf
 */
 int main(int argc, char *argv[])
 {
-	int cambio, monedas = 0;
+	int cent, counter = 0;
 
 	if (argc != 2)
 	{
@@ -16,35 +16,35 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	cambio = atoi(argv[1]);
-	while (cambio > 0)
+	cent = atoi(argv[1]);
+	while (cent > 0)
 	{
-		if (cambio >= 25)
+		if (cent >= 25)
 		{
-			cambio = cambio - 25;
-			monedas++;
+			cent -= 25;
+			counter += 1;
 		}
-		else if (cambio >= 10)
+		else if (cent >= 10)
 		{
-			cambio = cambio - 10;
-			monedas++;
+			cent -= 10;
+			counter += 1;
 		}
 		else if (cent >= 5)
 		{
-			cambio = cambio - 5;
-			monedas++;
+			cent -= 5;
+			counter += 1;
 		}
-		else if (cambio >= 2)
+		else if (cent >= 2)
 		{
-			cambio = cambio - 2;
-			monedas++;
+			cent -= 2;
+			counter += 1;
 		}
 		else
 		{
-			cambio = cambio - 1;
-			monedas += 1;
+			cent -= 1;
+			counter += 1;
 		}
 	}
-	printf("%d\n", monedas);
+	printf("%d\n", counter);
 	return (0);
 }
