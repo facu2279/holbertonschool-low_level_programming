@@ -41,12 +41,12 @@ int cambio, monedas = 0;
 	     monedas++;
 	   }
        }
+     printf("%d\n", monedas);
+     return (0);
    }
  else
    {
  printf("Error \n");
  return (1);
    }
- printf("%d\n", monedas);
- return (0);
 }
