@@ -21,27 +21,27 @@ int main(int argc, char *argv[])
 	{
 		if (cambio >= 25)
 		{
-			cambio -= 25;
+			cambio = cambio - 25;
 			monedas++;
 		}
 		else if (cambio >= 10)
 		{
-			cambio -= 10;
+			cambio = cambio - 10;
 			monedas++;
 		}
 		else if (cambio >= 5)
 		{
-			cambio -= 5;
+			cambio = cambio - 5;
 			monedas++;
 		}
 		else if (cambio >= 2)
 		{
-			cambio -= 2;
+			cambio = cambio - 2;
 			monedas++;
 		}
 		else
 		{
-			cambio -= 1;
+			cambio--;
 			monedas++;
 		}
 	}
