@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-  argv = "hola";
+  (void) argv;
   printf("%d \n", argc - 1);
   return (0);
 }    
