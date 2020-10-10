@@ -3,26 +3,18 @@
 #include <ctype.h>
 int main(int argc, char *argv[])
 {
-  int i, res;
-  if (argc > 2)
+  int i, sum = 0, intermedia;
+
+  for (i = 1; i < argc; i++)
     {
-      for (i = 1; i < argc - 1; i++)
+      intermedia = atoi(argv[i]);
+      if (intermedia == 0 && *argv[i] != '0')
 	{
-	  if (isdigit(argv[i]))
-	    {
-	      if (isdigit(argv[i + 1]))
-		{
-		  res = res + atoi(argv[i]) + atoi(argv[i + 1]);
-		}else{
-		printf("Error \n");
-		return (1);
-	      }
-	    }else{                                                                                                                                                                                                                                       printf("Error \n");
-	    return (1);
-	  }  
+	  printf("Error \n");
+	  return (1);
 	}
-    }else{
-    printf("0 \n");
-  }
-    return (0);
+      sum = sum + intermedia; 
+    }
+  printf("%d\n", sum);
+  return (0);
 }
