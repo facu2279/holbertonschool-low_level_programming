@@ -7,13 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-  int count;
-
-  (void)argv;
-  for (count = 0; count < argc; count++)
-    {
-      if (count + 1 == argc)
-	printf("%i\n", count);
-    }
-  return (0);
+(void)argv;
+printf("%i\n", argc - 1);
+return (0);
 }
