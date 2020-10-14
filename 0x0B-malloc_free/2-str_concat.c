@@ -4,7 +4,7 @@
  * str_concat - fdg
  * @s1: sdf
  * @s2: sadfa
- * Return:
+ * Return: adsf
  */
 char *str_concat(char *s1, char *s2)
 {
