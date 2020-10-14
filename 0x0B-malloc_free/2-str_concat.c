@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
     }
   
   largototal = largo1 + largo2;
-  ar = (char *)malloc(largototal - 1);
+  ar = (char *)malloc(largototal + 1);
   if (ar != NULL)
     {
       for (i = 0; i < largo1; i++)
