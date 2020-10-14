@@ -22,7 +22,7 @@ for (largo2 = 0; s2[largo2] != '\0'; largo2++)
 {
 }
 largototal = largo1 + largo2;
-ar = (char *)malloc(largototal + 1);
+ar = (char *)malloc(largototal);
 if (ar != NULL)
 {
 for (i = 0; i < largo1; i++)
