@@ -28,12 +28,12 @@ char *str_concat(char *s1, char *s2)
   ar = (char*)malloc(largototal);
   if (ar != NULL)
     {
-      for (i = 0; i <= largo1; i++)
+      for (i = 0; i < largo1; i++)
 	{
 	  ar[i] = s1[i];
 	}
       k = 0;
-      for (j = i; j <= largototal; j++)
+      for (j = i; j < largototal; j++)
 	{
 	  ar[j] = s2[k];
 	  k++;
