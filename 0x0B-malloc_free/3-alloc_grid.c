@@ -1,10 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * alloc_grid - allocates a matrix, make space and free space
- * @width: takes in width of matrix
- * @height: height of matrix
- * Return: matrix with freed spaces
+ * alloc_grid - fdfgdfgdf
+ * @width: sfdsads
+ * @height: sadfasdf
+ * Return: sadasd
  */
 int **alloc_grid(int width, int height)
 {
