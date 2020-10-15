@@ -3,6 +3,7 @@
 /**
  * malloc_checked - sdf
  * @b:sdf
+ * Return: asf
  */
 void *malloc_checked(unsigned int b)
 {
