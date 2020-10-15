@@ -10,7 +10,7 @@ int *array_range(int min, int max)
 	arr = malloc(tamano * 4);
 	if (arr == NULL)
 		return (NULL);
-	for (i = 0; i <= max; i++)
+	for (i = 0; min <= max; i++)
 	{
 		arr[i] = min;
 		min++;
