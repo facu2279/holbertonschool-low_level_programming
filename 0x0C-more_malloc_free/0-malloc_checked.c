@@ -9,12 +9,12 @@ void *malloc_checked(unsigned int b)
 	char *ar;
 
 	ar = (char *)malloc(b);
-	if (ar == NULL)
+	if (ar != NULL)
 	{
 		return (ar);
 	}
 	else
 	{
-		return (ar);
+		exit(98);
 	}
 }
