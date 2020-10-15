@@ -22,6 +22,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (largo2 = 0; s2[largo2] != '\0'; largo2++)
 	{
 	}
+	if (largo2 < n)
+	{
+		n = largo2;
+	}
 	ar = (char *)malloc(largo1 + n);
 	if (ar != NULL)
 	{
