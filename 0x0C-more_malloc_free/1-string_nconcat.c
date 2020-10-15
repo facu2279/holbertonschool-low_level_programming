@@ -1,56 +1,59 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
+int _strlen(char *s);
 /**
- * string_nconcat - sdafa
- * @s1: sadfa
- * @s2: sdf
- * @n: safd
- * Return: sadfa
+ *string_nconcat - concatenates two strings into a knew one
+ *@s1: fist string
+ *@s2: second string
+ *@n: amount of characters to print from s2
+ *Return: knew string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *ar;
-	unsigned int largo1, largo2, i, j, k;
+	unsigned int len1, len2, i, j;
+	char *p;
 
-		if (s1 == NULL)
-			s1 = "";
-		if (s2 == NULL)
-			s2 = "";
-		for (largo1 = 0; s1[largo1] != '\0'; largo1++)
-		{
-		}
-		for (largo2 = 0; s2[largo2] != '\0'; largo2++)
-		{
-		}
-		if (largo2 < n)
-		{
-			n = largo2;
-		}
-		ar = (char *)malloc(largo1 + n);
-		if (ar != NULL)
-		{
-			for (i = 0; i < largo1; i++)
-			{
-				ar[i] = s1[i];
-			}
-			k = 0;
-			if (n > 0)
-			{
-				for (j = i; j < largo1 + n; j++)
-				{
-					ar[j] = s2[k];
-					k++;
-				}
-				ar[j] = '\0';
-				return (ar);
-			}
-			else
-			{
-				return (ar);
-			}
-		}
-		else
-		{
-			return (NULL);
-		}
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
+
+	if (n > len2)
+	{
+		n = len2;
+	}
+	p = malloc(len1 + n + 1);
+	if (p == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < len1; i++)
+		p[i] = s1[i];
+	for (j = 0; j < n; j++)
+		p[i + j] = s2[j];
+	p[i + j] = '\0';
+	return (p);
+}
+
+/**
+ * _strlen - fdfdf
+ * @s: sksksks
+ * Return: sassassass
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+	}
+	return (i);
 }
