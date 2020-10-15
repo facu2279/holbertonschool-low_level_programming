@@ -34,11 +34,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			ar[i] = s1[i];
 		}
 		k = 0;
-		for (j = i; j < largo1 + n; j++)
+		for (j = i; j <= largo1 + n; j++)
 		{
 			ar[j] = s2[k];
 			k++;
 		}
+		ar[j] = '\0';
 		return (ar);
 	}
 	else
