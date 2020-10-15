@@ -12,8 +12,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ar;
 	unsigned int largo1, largo2, i, j, k;
 
-	if (n > 0)
-	{
 		if (s1 == NULL)
 			s1 = "";
 		if (s2 == NULL)
@@ -36,18 +34,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				ar[i] = s1[i];
 			}
 			k = 0;
-			for (j = i; j < largo1 + n; j++)
+			if (n > 0)
 			{
-				ar[j] = s2[k];
-				k++;
+				for (j = i; j < largo1 + n; j++)
+				{
+					ar[j] = s2[k];
+					k++;
+				}
+				ar[j] = '\0';
+				return (ar);
 			}
-			ar[j] = '\0';
-			return (ar);
+			else
+			{
+				return (ar);
+			}
 		}
 		else
 		{
 			return (NULL);
 		}
-	}
-	return (NULL);
 }
