@@ -2,15 +2,14 @@
 #include <stdlib.h>
 
 /**
- * main - entry point
- * @argc: count elements
- * @argv: elements
- * Return: always 0
+ * main - asdfasd
+ * @argc: asdfas
+ * @argv: asdfas
+ * Return: sdfas
  */
 
 int main(int argc, char *argv[])
 {
-	long int num1, num2, mul;
 
 	if (argc != 3)
 	{
