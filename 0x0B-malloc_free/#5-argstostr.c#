@@ -1,0 +1,12 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+ * argstostr - sadf
+ * @ac: asdf
+ * @avv: asdf
+ *Return: asdf
+ */
+char *argstostr(int ac, char **av)
+{
+
+}
