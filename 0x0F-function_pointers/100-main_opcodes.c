@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int xd, i;
 	unsigned char *p;
+
 	p = (char *)main;
 
 	if (argc != 2)
