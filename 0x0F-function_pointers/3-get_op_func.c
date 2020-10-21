@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * get_op_func - function ge
- * @s: the char
- * Return: something
+ * get_op_func - fgsd
+ * @s: sadfsadf
+ * Return: asdfsdf
  */
 
 int (*get_op_func(char *s))(int, int)

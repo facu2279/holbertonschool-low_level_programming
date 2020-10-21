@@ -1,9 +1,9 @@
 #include "3-calc.h"
 /**
- * op_add - func that sums 2 numbers
- * @a: num 1
- * @b: num 2
- * Return: the sum of the numbers
+ * op_add - asdasd
+ * @a: asdfasd
+ * @b: asdfsad
+ * Return: asdfdsfs
  */
 int op_add(int a, int b)
 {
@@ -11,10 +11,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - return the rest of the 2 numbers
- * @a: num 1
- * @b: num 2
- * Return: the resta of 2 numbers
+ * op_sub - sdfasdf
+ * @a: sdfasdf
+ * @b: sadfasdf
+ * Return: sadfsdfs
  */
 int op_sub(int a, int b)
 {
@@ -22,10 +22,10 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - multiply 2 numbers
- * @a: num 1
- * @b: num 2
- * Return: the multiply of 2 numbers
+ * op_mul - asdfasdf
+ * @a: sadfsasa
+ * @b: sadass
+ * Return: sadasd
  */
 int op_mul(int a, int b)
 {
@@ -33,20 +33,20 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - the division of 2 numbers
- * @a: number 1
- * @b: num 2
- * Return: the division of 2 numbers
+ * op_div - asdasd
+ * @a: sadasd
+ * @b: sadasd
+ * Return: asfdasdf
  */
 int op_div(int a, int b)
 {
 	return (a / b);
 }
 /**
- * op_mod - return the mod of 2 numbers
- * @a: num 1
- * @b: num 2
- * Return: the mod of 2 numbers
+ * op_mod - asdfasd
+ * @a: sadsad
+ * @b: asdasd
+ * Return: asdasd
  */
 int op_mod(int a, int b)
 {

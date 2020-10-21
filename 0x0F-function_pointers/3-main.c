@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * amain - entry point
- * @argc: cantidad de elem
- * @argv: elements
- * Return: always 0
+ * gfgf
+ * @argc: fdsdf
+ * @argv: dfgsdfg
+ * Return: sdfsadf
  */
 
 int main(int argc, char *argv[])
