@@ -1,0 +1,10 @@
+#include "function_pointers"
+/**
+ * print_name - dsfg
+ * @name: sadf
+ * @f: asdf
+ */
+void print_name(char *name, void (*f)(char *))
+{
+	f(name);
+}
