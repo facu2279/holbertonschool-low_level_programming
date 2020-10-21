@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - prints opcode of own main function
+ * main - asdasdas
  *
- * @argc: argument count
- * @argv: array of arguments
- * Return: 1 or 2 on fail, 0 on success
+ * @argc: asdasda
+ * @argv: adasdas
+ * Return: asdasds
  */
 int main(int argc, char *argv[])
 {
