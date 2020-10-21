@@ -10,8 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int xd, i;
-	unsigned char *p = (char *)main;
+	int xd;
 
 	if (argc != 2)
 	{
