@@ -1,5 +1,5 @@
 #ifndef FUNCTIONXD
-#define FUNCTIOXD
+#define FUNCTIONXD
 
 /**
  * struct op - Struct op

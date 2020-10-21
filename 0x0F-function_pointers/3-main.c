@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * gfgf
+ * main - gfgf
  * @argc: fdsdf
  * @argv: dfgsdfg
  * Return: sdfsadf
