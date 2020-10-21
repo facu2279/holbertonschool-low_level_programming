@@ -10,8 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int xd;
-	char *p = (char *)main;
+	int xd, i;
+	unsigned char *p = (char *)main;
 
 	if (argc != 2)
 	{
@@ -24,4 +24,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
+	for (i = 0; i < xd - 1; i++, p++)
+	{
+		printf("%02x ", *p);
+	}
+	p++;
+	printf("%02x\n", *p);
 }
