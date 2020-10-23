@@ -18,6 +18,7 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			sum = sum + va_arg(lista, int);
 		}
+		va_end(lista);
 	}
 	return (sum);
 }
