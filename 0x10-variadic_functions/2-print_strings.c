@@ -12,7 +12,7 @@ unsigned int i;
 char *s;
 va_list lista;
 
-if (n > 0 && separator != NULL)
+if (n > 0)
 {
 	va_start(lista, n);
 	for (i = 0; i < n; i++)
@@ -25,7 +25,7 @@ if (n > 0 && separator != NULL)
 			{
 				if (i != n - 1)
 				{
-					printf("%c ", *separator);
+					printf("%s", separator);
 				}
 			}
 		}
