@@ -3,22 +3,22 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
 /**
- * print_strings - prints strigns
- * @separator: the string to be printed between the strings
- * @n: number of strings
+ * print_strings - sadf
+ * @separator: asdfasdf
+ * @n: sdfsdf
  *
- * Return: nothing
+ * Return: sdfsdf
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	va_list valist;
+	va_list lista;
 	char *str;
 
-	va_start(valist, n);
+	va_start(lista, n);
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(valist, char *);
+		str = va_arg(lista, char *);
 		if (str)
 		{
 			printf("%s", str);
@@ -32,6 +32,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		}
 	}
-	va_end(valist);
+	va_end(lista);
 	printf("\n");
 }
