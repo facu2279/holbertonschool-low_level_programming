@@ -4,36 +4,36 @@
 #include "variadic_functions.h"
 
 /**
- * printchar - print char
- * @str: string pointer
- * @list: arguments list
+ * printchar - asdasd
+ * @str: asdasd
+ * @list: asdasd
  */
 void printchar(char *str, va_list list)
 {
 	printf("%s%c", str, va_arg(list, int));
 }
 /**
- * printint - print int
- * @str: string pointer
- * @list: arguments list
+ * printint - asdas
+ * @str: asdasd
+ * @list: asdasd
  */
 void printint(char *str, va_list list)
 {
 	printf("%s%i", str, va_arg(list, int));
 }
 /**
- * printfloat - print float
- * @str: string pointer
- * @list: arguments list
+ * printfloat - asdas
+ * @str: string asdasd
+ * @list: asdasd
  */
 void printfloat(char *str, va_list list)
 {
 	printf("%s%f", str, va_arg(list, double));
 }
 /**
- * printstring - print string
- * @str: string pointer
- * @list: arguments list
+ * printstring - asdasd
+ * @str: asdasd
+ * @list: asdasd
  */
 void printstring(char *str, va_list list)
 {
@@ -49,8 +49,8 @@ void printstring(char *str, va_list list)
 	printf("%s%s", str, tmp);
 }
 /**
- * print_all - print string
- * @format: string pointer
+ * print_all - asdasd
+ * @format: asdas
  */
 void print_all(const char * const format, ...)
 {
