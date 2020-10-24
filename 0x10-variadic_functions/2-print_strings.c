@@ -1,40 +1,37 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdlib.h>
 /**
- * print_strings - afda
- * @separator: asdf
- * @n: asdfa
+ * print_strings - prints strigns
+ * @separator: the string to be printed between the strings
+ * @n: number of strings
+ *
+ * Return: nothing
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-unsigned int i;
-char *s;
-va_list lista;
+	unsigned int i;
+	va_list valist;
+	char *str;
 
-if (n > 0)
-{
-	va_start(lista, n);
+	va_start(valist, n);
 	for (i = 0; i < n; i++)
 	{
-		s = va_arg(lista, char*);
-		if (s != NULL)
+		str = va_arg(valist, char *);
+		if (str)
 		{
-			printf("%s", s);
-			if (separator != NULL)
-			{
-				if (i != n - 1)
-				{
-					printf("%s", separator);
-				}
-			}
+			printf("%s", str);
 		}
 		else
 		{
 			printf("(nil)");
 		}
+		if (separator != NULL && i < n - 1)
+		{
+			printf("%s", separator);
+		}
 	}
-	putchar('\n');
-	va_end(lista);
-}
+	va_end(valist);
+	printf("\n");
 }
