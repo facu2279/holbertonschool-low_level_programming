@@ -1,4 +1,4 @@
-0x13.C - MORE SINGLY LINKED LISTS
+0x13.C - MORE SINGLY LINKED LISTS - FACUNDO DIAZ COHORT 13 - HOLBERTON SCHOOL - NOVEMBER 2020
 
 Requirements
 
@@ -38,4 +38,3 @@ Dont forget to push your header file
 
 All your header files should be include guarded
 
-FACUNDO DIAZ COHORT 13- HOLBERTON SCHOOL 2020
