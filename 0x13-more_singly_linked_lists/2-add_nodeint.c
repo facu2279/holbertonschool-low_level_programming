@@ -3,7 +3,7 @@
 /**
  * add_nodeint - add a new node to the list
  * @head: the head of the list
- * @n: the string to add
+ * @n: length of list
  * Return: the list
  */
 listint_t *add_nodeint(listint_t **head, const int n)
