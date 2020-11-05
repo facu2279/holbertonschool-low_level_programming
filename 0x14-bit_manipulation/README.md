@@ -43,6 +43,7 @@ All your header files should be include guarded
 
 ---------------------------------------------
 Authors
+---------------------------------------------
 Made by Facundo Diaz for Holberton School
 ---------------------------------------------
 Date
