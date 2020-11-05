@@ -1,4 +1,4 @@
-FACUNDO DIAZ COHORTE 13 - HOLBERTON SCHOOL NOVEMBER 2020
+FACUNDO DIAZ COHORT 13 - HOLBERTON SCHOOL NOVEMBER 2020
 
 -------------------
 Low-level programming & Algorithm - Hatching out
