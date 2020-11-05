@@ -42,9 +42,9 @@ Dont forget to push your header file
 All your header files should be include guarded
 
 ---------------------------------------------
-
 Authors
 Made by Facundo Diaz for Holberton School
 ---------------------------------------------
 Date
+---------------------------------------------
 5/11/2020
