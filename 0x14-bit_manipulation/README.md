@@ -1,4 +1,4 @@
-0x14. C - Bit Manipulation - FACUNDO DIAZ COHORT 13 - HOLBERTON SCHOOL NOVEMBER 2020
+0x14. C - Bit Manipulation
 --------------------------------------------------------------------
 General
 --------------------------------------------------------------------
@@ -40,3 +40,9 @@ The prototypes of all your functions and the prototype of the function _putchar 
 Dont forget to push your header file
 
 All your header files should be include guarded
+---------------------------------------------
+Authors
+Made by Facundo Diaz for Holberton School
+---------------------------------------------
+Date
+5/11/2020
