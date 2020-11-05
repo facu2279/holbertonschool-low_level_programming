@@ -1,4 +1,4 @@
-0x14. C - Bit manipulation - FACUNDO DIAZ COHORTE 13 - HOLBERTON SCHOOL NOVEMBER 2020
+0x14. C - Bit Manipulation - FACUNDO DIAZ COHORT 13 - HOLBERTON SCHOOL NOVEMBER 2020
 --------------------------------------------------------------------
 General
 --------------------------------------------------------------------
