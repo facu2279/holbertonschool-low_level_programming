@@ -62,6 +62,7 @@ The first line of all your files should be exactly #!/bin/bash
 Author
 ----------------------------------
 Facundo diaz for Holberton school
+
 Date
 ----------------------------------
 17/09/2020
