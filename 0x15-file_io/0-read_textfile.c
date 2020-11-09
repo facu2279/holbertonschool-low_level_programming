@@ -26,7 +26,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	len = read(fd, buf, letters);
 
 	i = write(1, buf, len);
-
+	if (i < 0)
+	{
+		return (0);
+	}
 	close(fd);
 
 	return (i);
