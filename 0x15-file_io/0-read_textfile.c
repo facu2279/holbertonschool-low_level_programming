@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (fd == -1)
 	{
-		return(1);
+		return (1);
 	}
 
 	len = read(fd, buf, letters);
@@ -29,5 +29,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	close(fd);
 
-	return(i);
+	return (i);
 }
