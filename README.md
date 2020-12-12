@@ -66,6 +66,9 @@ The first line of all your files should be exactly #!/bin/bash
 
 Authors
 --------------------
-Made by [Facundo Diaz](https://www.linkedin.com/in/facundo-d%C3%ADaz-720110149/) to Holberton School 2020
+Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
 
-- ( click on the name to go directly to my linkedin profile )
+Social Networks
+-------------------
+[Linkedin](https://www.linkedin.com/in/facundo-d%C3%ADaz-720110149/)
+[Twitter](https://twitter.com/facudiazuy)
