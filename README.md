@@ -1,10 +1,9 @@
-FACUNDO DIAZ COHORT 13 - HOLBERTON SCHOOL NOVEMBER 2020
+# Low-level programming & Algorithm - Hatching out
 
--------------------
-Low-level programming & Algorithm - Hatching out
+General
+------------------
+This repository contains all the exercises done in C # and some advanced exercises that were solved with different technologies.
 
--------------------
-
-Low-level programming & Algorithm - Data structures and Algorithms
-
--------------------
+Authors
+--------------------
+Made by Facundo Diaz to Holberton School 2020
