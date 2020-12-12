@@ -41,11 +41,10 @@ Dont forget to push your header file
 
 All your header files should be include guarded
 
----------------------------------------------
-Authors
----------------------------------------------
-Made by Facundo Diaz for Holberton School
+# Authors
+Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
 
-Date
----------------------------------------------
-5/11/2020
+Social Networks
+-------------------
+- [Linkedin](https://www.linkedin.com/in/facundo-d%C3%ADaz-720110149/)
+- [Twitter](https://twitter.com/facudiazuy)

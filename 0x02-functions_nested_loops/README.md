@@ -31,10 +31,10 @@ taining a description of the repository
 A README.md file, at the root of the folder of this project (i.e. 0x03-debugging), 
 describing what this project is about
 
-Author
-----------------
-Facundo Diaz for Holberton school
+# Authors
+Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
 
-Date
---------------------
-23/09/2020
+Social Networks
+-------------------
+- [Linkedin](https://www.linkedin.com/in/facundo-d%C3%ADaz-720110149/)
+- [Twitter](https://twitter.com/facudiazuy)
