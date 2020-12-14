@@ -9,32 +9,40 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 unsigned int i;
-dlistint_t *copy;
-dlistint_t *aux;
-dlistint_t *new;
+	dlistint_t *nodo, *new;
 
-if (h == NULL)
-{
-return (add_dnodeint(h, n));
-}
-copy = *h;
-for (i = 0; i < idx && copy != NULL; i++)
-{
-copy = copy->next;
-}
-if (copy == NULL)
-{
-return (add_dnodeint_end(h, n));
-}
-new = malloc(sizeof(dlistint_t));
-if (new == NULL)
-return (NULL);
-copy = copy->prev;
-aux = copy->next;
-new->n = n;
-copy->next = new;
-new->prev = copy;
-aux->prev = new;
-new->next = aux;
-return (copy);
+	nodo = malloc(sizeof(dlistint_t));
+	if (nodo == NULL)
+		return (NULL);
+	new = (*h);
+	nodo->prev = NULL;
+	nodo->next = NULL;
+	nodo->n = n;
+	if (idx == 0)
+	{
+		if (*h == NULL)
+			(*h) = nodo;
+		else
+		{
+			nodo->next = (*h);
+			new->prev = nodo;
+			(*h) = nodo;
+		}
+		return (nodo);
+	}
+	for (i = 0; new->next != NULL || i + 1 == idx; i++)
+	{
+		if (i + 1 == idx)
+		{
+			if (new->next != NULL)
+				new->next->prev = nodo;
+			nodo->next = new->next;
+			new->next = nodo;
+			nodo->prev = new;
+			return (nodo);
+		}
+		new = new->next;
+	}
+	free_dlistint(nodo);
+	return (NULL);
 }
