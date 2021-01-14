@@ -97,7 +97,7 @@ Files
 - 5-hash_table_print.c
 - 6-hash_table_delete.c
 - 100-sorted_hash_table.c
-- holberton.h
+- hash_tables.h
 - README.md
 
 # Authors
