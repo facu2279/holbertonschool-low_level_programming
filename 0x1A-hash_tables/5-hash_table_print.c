@@ -22,18 +22,19 @@ void hash_table_print(const hash_table_t *ht)
 		aux_node = ht->array[i];
 		while (aux_node != NULL)
 		{
-			
+			if (aux_node->key)
+            {
             if (flag == 0)
 			{
 				printf("'%s': '%s'", aux_node->key, aux_node->value);
 				flag += 1;
-                aux_node = aux_node->next;
 			}
 			else
 			{
 				printf(", '%s': '%s'", aux_node->key, aux_node->value);
 			}
 			aux_node = aux_node->next;
+            }
 		}
 	}
     }
