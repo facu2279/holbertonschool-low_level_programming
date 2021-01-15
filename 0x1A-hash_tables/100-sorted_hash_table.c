@@ -11,7 +11,23 @@
 */
 shash_table_t *shash_table_create(unsigned long int size)
 {
+	shash_table_t *new;
+	unsigned long int i;
 
+	new = malloc(sizeof(shash_table_t));
+	if (new == NULL)
+		return (NULL);
+	new->size = size;
+	new->array = malloc(sizeof(shash_node_t) * size);
+	if (new->array == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		new->array[i] = NULL;
+	}
+	return (new);
 }
 /**
 * shash_table_set - set a shash table
@@ -22,7 +38,19 @@ shash_table_t *shash_table_create(unsigned long int size)
 */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-
+return (0);
+if (ht)
+{
+    
+}
+if (key)
+{
+    
+}
+if (value)
+{
+    
+}
 }
 /**
 * shash_table_get - get a shah table
@@ -32,7 +60,15 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 */
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
-
+return ("test");
+if (ht)
+{
+    
+}
+if (key)
+{
+    
+}
 }
 /**
 * shash_table_print - print a table
@@ -40,7 +76,11 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 */
 void shash_table_print(const shash_table_t *ht)
 {
-
+printf("entro a funcion print");
+if (ht)
+{
+    
+}
 }
 /**
 * shash_table_print_rev - print a table in reverse
@@ -48,7 +88,10 @@ void shash_table_print(const shash_table_t *ht)
 */
 void shash_table_print_rev(const shash_table_t *ht)
 {
+if (ht)
+{
 
+}
 }
 /**
 * shash_table_delete - delete a hash table
@@ -56,5 +99,8 @@ void shash_table_print_rev(const shash_table_t *ht)
 */
 void shash_table_delete(shash_table_t *ht)
 {
-
+if (ht)
+{
+    
+}
 }
