@@ -1,8 +1,8 @@
 /*
- * task 100-sorted_hash_table.c
- * Made by Facundo Diaz to Holberton School
- * Date - 14/01/2021
- */
+* task 100-sorted_hash_table.c
+* Made by Facundo Diaz to Holberton School
+* Date - 14/01/2021
+*/
 #include "hash_tables.h"
 /**
 * shash_table_create - create a new shash table
@@ -11,24 +11,24 @@
 */
 shash_table_t *shash_table_create(unsigned long int size)
 {
-	shash_table_t *new = NULL;
-	unsigned long int i;
+shash_table_t *new = NULL;
+unsigned long int i;
 
-        new = malloc(sizeof(shash_table_t));
-        if (new)
-            return (NULL);
+new = malloc(sizeof(shash_table_t));
+if (new)
+return (NULL);
 
-        new->size = size;
-        new->array = malloc(sizeof(shash_node_t) * size);
-        if (new->array)
-        {
-            return (NULL);
-        }
-        for (i = 0; i < size; i++)
-        {
-            new->array[i] = NULL;
-        }
-    return (new);
+new->size = size;
+new->array = malloc(sizeof(shash_node_t) * size);
+if (new->array)
+{
+return (NULL);
+}
+for (i = 0; i < size; i++)
+{
+new->array[i] = NULL;
+}
+return (new);
 }
 /**
 * shash_table_set - set a shash table
@@ -39,10 +39,10 @@ shash_table_t *shash_table_create(unsigned long int size)
 */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-    (void)* ht;
-    (void)* key;
-    (void)* value;
-    return (0);
+(void)*ht;
+(void)*key;
+(void)*value;
+return (0);
 }
 /**
 * shash_table_get - get a shah table
@@ -55,11 +55,11 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 return ("test");
 if (ht)
 {
-    
+
 }
 if (key)
 {
-    
+
 }
 }
 /**
@@ -70,7 +70,7 @@ void shash_table_print(const shash_table_t *ht)
 {
 if (ht)
 {
-    
+
 }
 }
 /**
@@ -92,6 +92,6 @@ void shash_table_delete(shash_table_t *ht)
 {
 if (ht)
 {
-    
+
 }
 }
