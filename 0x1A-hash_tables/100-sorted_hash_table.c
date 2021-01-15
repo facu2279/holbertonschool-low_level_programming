@@ -39,18 +39,10 @@ shash_table_t *shash_table_create(unsigned long int size)
 */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-if (key)
-{
-    
-}
-if (ht)
-{
-    
-}
-if (value)
-{
-    
-}
+    (void)* ht;
+    (void)* key;
+    (void)* value;
+    return (0);
 }
 /**
 * shash_table_get - get a shah table
@@ -76,7 +68,10 @@ if (key)
 */
 void shash_table_print(const shash_table_t *ht)
 {
-
+if (ht)
+{
+    
+}
 }
 /**
 * shash_table_print_rev - print a table in reverse
