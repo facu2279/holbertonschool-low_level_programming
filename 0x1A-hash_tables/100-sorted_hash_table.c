@@ -39,19 +39,18 @@ shash_table_t *shash_table_create(unsigned long int size)
 */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-return (0);
-if (ht)
+if (key)
 {
     
 }
-if (key)
+if (ht)
 {
     
 }
 if (value)
 {
     
-}
+} return (0);
 }
 /**
 * shash_table_get - get a shah table
@@ -77,11 +76,26 @@ if (key)
 */
 void shash_table_print(const shash_table_t *ht)
 {
-printf("entro a funcion print");
-if (ht)
-{
-    
-}
+	shash_node_t *tmp_node = NULL;
+	char *comma = "";
+
+	if (ht)
+	{
+		printf("{");
+		tmp_node = ht->shead;
+
+		while (tmp_node)
+		{
+			printf("%s", comma);
+			comma = ", ";
+
+			if (tmp_node->key)
+				printf("'%s': '%s'", tmp_node->key, tmp_node->value);
+
+			tmp_node = tmp_node->snext;
+		}
+		printf("}\n");
+	}
 }
 /**
 * shash_table_print_rev - print a table in reverse
