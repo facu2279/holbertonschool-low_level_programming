@@ -25,13 +25,12 @@ void hash_table_print(const hash_table_t *ht)
 			printf("%s", separador);
 				separador = ", ";
 
-				if (tmp_node->key)
-					printf("'%s': '%s'", tmp_node->key, tmp_node->value);
+				if (aux_node->key)
+					printf("'%s': '%s'", aux_node->key, aux_node->value);
 
 			aux_node = aux_node->next;
-            }
-		}
+        }
 	}
-    }
 	printf("}\n");
+    }
 }
