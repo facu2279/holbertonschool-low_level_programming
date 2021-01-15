@@ -15,17 +15,20 @@ shash_table_t *shash_table_create(unsigned long int size)
 	unsigned long int i;
 
 	new = malloc(sizeof(shash_table_t));
-	if (new == NULL)
+	if (new)
 		return (NULL);
+
 	new->size = size;
 	new->array = malloc(sizeof(shash_node_t) * size);
-	if (new->array == NULL)
+	if (new->array)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++)
+    i = 0;
+	while (i < size)
 	{
 		new->array[i] = NULL;
+        i++;
 	}
 	return (new);
 }
