@@ -11,24 +11,18 @@
 */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *new_ht;
-	unsigned int i;
-
-	if (size < 1)
-		return (NULL);
+	hash_node_t **new_arr = NULL;
+	hash_table_t *new_ht = NULL;
 
 	new_ht = malloc(sizeof(hash_table_t));
-	if (new_ht == NULL)
+	new_arr = malloc(sizeof(hash_node_t *) * size);
+	if (!new_arr | !new_ht)
+	{
+		free(new_arr);
+		free(new_ht);
 		return (NULL);
-
-	new_ht->array = malloc(sizeof(void *) * size);
-	if (new_ht == NULL)
-		return (NULL);
-
-	for (i = 0; i < size; i++)
-		new_ht->array[i] = NULL;
-
+	}
 	new_ht->size = size;
-
+	new_ht->array = new_arr;
 	return (new_ht);
 }
