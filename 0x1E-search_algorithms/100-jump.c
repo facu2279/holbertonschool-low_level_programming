@@ -25,8 +25,8 @@ int jump_search(int *array, size_t size, int value)
     {
         if (array[i2] >= pos)
 	    break;
-        i = i + sig;
-	i2 = i2 + sig;
+        i += sig;
+	i2 += sig;
 	pos = array[i];
 	printf("Value checked array[%lu] = [%d]\n", i, pos);
     }
@@ -54,7 +54,7 @@ int jump_search(int *array, size_t size, int value)
  */
 size_t calcmin(size_t primero, size_t segundo)
 {
-    if (primero > segundo)
+    if (primero < segundo)
         return (primero);
     return (segundo);
 }
