@@ -1,60 +1,56 @@
 #include "search_algos.h"
-
+#include <math.h>
 /**
- * jump_search - xd
- * Made by Facundo Diaz for Holberton School
- * @array: array received
+ * jump_search - aaa
+ * @array: array
  * @size: size
  * @value: value
- * Return: aaa
+ * Return: xx
  */
 int jump_search(int *array, size_t size, int value)
 {
-    size_t i, i2, sig;
-    int pos;
+  size_t i, i2, salto;
+  int pos;
 
-    if (!array)
-      return (-1);
-
-    i = 0;
-    sig = sqrt(size);
-    i2 = sig;
-    pos = array[i];
-    printf("Value checked array[%lu] = [%d]\n", i2, pos);
-    while (i2 < size && pos < value)
+  if (array != NULL && size > 0)
     {
-        if (array[i2] >= pos)
+      salto = sqrt(size);
+      i = 0;
+      i2 = salto;
+      pos = array[i];
+      printf("Value checked array[%lu] = [%d]\n", i, pos);
+      while (i2 < size && pos < value)
+	{
+	  if (array[i2] >= value)
 	    break;
-        i += sig;
-	i2 += sig;
-	pos = array[i];
-	printf("Value checked array[%lu] = [%d]\n", i, pos);
-    }
-    if (i >= size)
-        return (-1);
-    if (pos > value)
-        return (-1);
-    printf("Value found between indexes [%lu] and [%lu]\n", i, i2);
-    while (i <= calcmin(size - 1, i2) && pos <= value)
-    {
-        pos = array[i];
-	printf("Value checked array[%lu] = [%d]\n", i, pos);
-	if (pos == value)
+	  i = i + salto;
+	  i2 = i2 + salto;
+	  pos = array[i];
+	  printf("Value checked array[%lu] = [%d]\n", i, pos);
+	}
+      if (i >= size || pos > value)
+	return (-1);
+      printf("Value found between indexes [%lu] and [%lu]\n", i, i2);
+      while (i <= calcmin(size - 1, i2) && pos <= value)
+	{
+	  pos = array[i];
+	  printf("Value checked array[%lu] = [%d]\n", i, pos);
+	  if (pos == value)
 	    return (i);
-	i = i + 1;
+	  i++;
+	}
     }
-    return (-1);
+  return (-1);
 }
 /**
- * calcmin - aa
- * @primero: aa
- * @b: aa
- *
- * Return: The smaller of the two values, or a if equal
+ * calcmin - finds the minimum of two values
+ * @primero: a
+ * @segundo: a
+ * Return: xd
  */
 size_t calcmin(size_t primero, size_t segundo)
 {
-    if (primero < segundo)
-        return (primero);
+  if (segundo < primero)
     return (segundo);
+  return (primero);
 }
