@@ -1,7 +1,7 @@
 #include "search_algos.h"
 #include <math.h>
 /**
- * jump_search - aaa
+ * jump_search - Made by Facundo Diaz for HHBTN 2021
  * @array: array
  * @size: size
  * @value: value
